@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #006A4D;
+    color: white;
+    font-size: 20px;
+}
+.topnav {
+    margin-left: auto; 
+    margin-right: auto;
+    padding-right: 160px;
+  }
+.topnav a{
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
