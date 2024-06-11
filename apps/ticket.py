@@ -19,7 +19,6 @@ def create_ticket(task):
     quote += '\nPlease dont write anything else.'
     
     final_output = gemini_llm_pt(prompt=quote)
-    print(final_output)
 
     # Convert to dict.
     trimmed_output = final_output.split("```json")[1]
@@ -30,4 +29,5 @@ def create_ticket(task):
 
 if __name__ == '__main__':
     task = 'I need to build an end-to-end pipeline for feature ingestion.'
-    create_ticket(task)
+    dict_output = create_ticket(task)
+    print(dict_output)
