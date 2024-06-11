@@ -5,7 +5,6 @@ from app_file import app
 
 @app.route('/view_tickets', methods=['GET', 'POST'])
 def view_tickets():
-    print(session)
     ticket = create_ticket(
         session["ticket_inputs"]["ticket_description"],
         session["ticket_inputs"]["ticket_detail"],

@@ -16,11 +16,10 @@ def index():
             "tools": request.form.get(f'tools', 'N/A'),
             "features": request.form.get(f'features', 'N/A'),
         }
-        print(session)
         return redirect(url_for('view_tickets'))
     else:
         return render_template("home.html")
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()
