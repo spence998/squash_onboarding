@@ -26,8 +26,7 @@ def create_ticket(task):
     trimmed_output = trimmed_output.split("```")[0]
     dict_output = ast.literal_eval(trimmed_output)
 
-    print(dict_output)
-    return
+    return dict_output
 
 if __name__ == '__main__':
     task = 'I need to build an end-to-end pipeline for feature ingestion.'
