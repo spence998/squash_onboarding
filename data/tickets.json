@@ -1,0 +1,56 @@
+[
+    {
+        "ticket_id": 1,
+        "title": "Set Up Development Environment",
+        "description": "Configure the development environment on the new employee's laptop, including installation of IDEs, local databases, and access to internal repositories.",
+        "story_points": 3,
+        "status": "To Do",
+        "priority": "High"
+    },
+    {
+        "ticket_id": 2,
+        "title": "Compliance Training",
+        "description": "Complete the mandatory compliance training for understanding the regulatory environment and data protection standards.",
+        "story_points": 1,
+        "status": "To Do",
+        "priority": "Critical"
+    },
+    {
+        "ticket_id": 3,
+        "title": "Introduction to Scrum Team",
+        "description": "Schedule a meeting for the new team member to meet the Scrum team, including Scrum Master and Product Owner.",
+        "story_points": 2,
+        "status": "To Do",
+        "priority": "High"
+    },
+    {
+        "ticket_id": 4,
+        "title": "Project Documentation Review",
+        "description": "Review existing project documentation to get familiar with the architecture and business logic.",
+        "story_points": 3,
+        "status": "To Do",
+        "priority": "Medium"
+    },
+    {
+        "ticket_id": 5,
+        "title": "Security Protocols Briefing",
+        "description": "Understand the internal security protocols, including VPN access, password policies, and secure coding practices.",
+        "story_points": 5,
+        "status": "To Do",
+        "priority": "High"
+    },
+    {
+        "ticket_id": 6,
+        "title": "Codebase Walkthrough",
+        "description": "Go through the main repositories to understand the code structure and major components.",
+        "story_points": 8,
+        "status": "To Do",
+        "priority": "Medium"
+    },
+    {
+        "ticket_id": 7,
+        "title": "Setup Email and Communication Tools",
+        "description": "Set up email accounts and access to communication tools like Slack, Microsoft Teams, or other internal communication software.",
+        "story_points": 1,
+        "status": "To Do",
+        "priority": "
