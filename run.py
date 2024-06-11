@@ -9,12 +9,14 @@ from pages import (
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
+        
         session['ticket_inputs'] = {
-            "ticket_description": request.form["ticket_description"],
-            "ticket_detail": request.form["ticket_detail"],
-            "tools": request.form["tools"],
-            "features": request.form["features"],
+            "ticket_description": request.form.get(f'ticket_description', 'N/A'),
+            "ticket_detail": request.form.get(f'ticket_detail', 'N/A'),
+            "tools": request.form.get(f'tools', 'N/A'),
+            "features": request.form.get(f'features', 'N/A'),
         }
+        print(session)
         return redirect(url_for('view_tickets'))
     else:
         return render_template("home.html")

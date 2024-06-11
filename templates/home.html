@@ -22,7 +22,7 @@
         <div class="bordered-div">
             <div id='section_a' class="tabcontent" name="tabcontent_section">
                 <div class="mb-3">
-                    <form>
+                    <form method='POST' action="{{ url_for('index') }}" enctype='multipart/form-data'>
                         <div class="mb-3">
                             <div class="d-flex justify-content-between">
                               <label class="form-label form-label-text">Ticket description:</label>
