@@ -3,10 +3,10 @@ import numpy as np
 import ast
 
 def create_ticket(
-        ticket_description
-        ticket_detail
-        tools
-        features
+        ticket_description,
+        ticket_detail,
+        tools,
+        features,
     ):
     """returns the ticket in the form of a dictionary"""
     quote = f'''
