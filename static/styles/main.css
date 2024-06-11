@@ -108,3 +108,40 @@
 .form_input {
   border: 3px;
 }
+
+
+.ticket-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 400px;
+  padding: 20px;
+}
+
+.ticket-header {
+  background-color: #0747a6;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.ticket-content {
+  padding: 20px;
+}
+
+.ticket-item {
+  margin-bottom: 15px;
+}
+
+.ticket-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ticket-value {
+  background-color: #ebecf0;
+  padding: 10px;
+  border-radius: 3px;
+}

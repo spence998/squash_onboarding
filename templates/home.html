@@ -14,7 +14,6 @@
         <h1>SOlve Jira And Banking Onboarding Inwork</h1>
         (SOLJA BOI)
     </div>   
-
     <div class="mb-2">
         <div class="tab bordered-div-small">
             <button name="tablinks_section" class="tablinks" onclick="OpenLLMTabServiceLed(event, 'section_a')" id="defaultOpenServiceLed" >Create tickets (Automated)</button>
@@ -38,11 +37,25 @@
                         </div>
                         <div class="d-flex justify-content-between">
                             <label class="form-label form-label-text">Tools:</label>
-                            <select style="width: 26.5%;" data-placeholder="None Selected" multiple class="chosen-select" name="content_size_multi_select" >
+                            <select style="width: 26.5%;" data-placeholder="None Selected" multiple class="chosen-select" name="tools" >
                                 <option value=""></option>
                                 <option>Python</option>
                                 <option>Go</option>
                                 <option>Javascript</option>
+                            </select>
+                            <script type="text/javascript">
+                              $(document).ready(function(){
+                                $(".chosen-select").chosen();
+                              });
+                            </script>
+                        </div>
+                        <div class="mt-2 d-flex justify-content-between">
+                            <label class="form-label form-label-text">Feature:</label>
+                            <select style="width: 26.5%;" data-placeholder="None Selected" multiple class="chosen-select" name="features" >
+                                <option value=""></option>
+                                <option>onboarding_jerry</option>
+                                <option>help_customers_bank</option>
+                                <option>new_banner</option>
                             </select>
                             <script type="text/javascript">
                               $(document).ready(function(){
