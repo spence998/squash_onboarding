@@ -1,4 +1,4 @@
-from gcp_llm import textbison_llm_pt, gemini_llm_pt
+from apps.gcp_llm import textbison_llm_pt, gemini_llm_pt
 import numpy as np
 import ast
 
