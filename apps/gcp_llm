@@ -7,7 +7,7 @@ from vertexai.language_models import TextGenerationModel
 from vertexai.preview.generative_models import GenerationConfig, GenerativeModel
 
 
-PROJECT_ID = "playpen-9ce4c4"
+PROJECT_ID = "lbplc-reboot24lon-883"
 REGION = 'europe-west2'  # London
 vertexai.init(project=PROJECT_ID, location=REGION)
 

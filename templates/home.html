@@ -2,8 +2,85 @@
 
 {% block content %}
 
-<div class="centered-text" style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-weight: bold; font-size: 24px; /* Adjust the font size as needed */">
-    home
+<link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+
+<div class="boxshaddow ml-5 mr-5 mt-5 mb-5">
+    <div class="mb-3" style="text-align: center;">
+        <h1>SOlve Jira And Banking Onboarding Inwork</h1>
+        (SOLJA BOI)
+    </div>   
+
+    <div class="mb-2">
+        <div class="tab bordered-div-small">
+            <button name="tablinks_section" class="tablinks" onclick="OpenLLMTabServiceLed(event, 'section_a')" id="defaultOpenServiceLed" >Create tickets (Automated)</button>
+            <button name="tablinks_section" class="tablinks" onclick="OpenLLMTabServiceLed(event, 'section_b')"></button>
+        </div>
+        <div class="bordered-div">
+            <div id='section_a' class="tabcontent" name="tabcontent_section">
+                <div class="mb-3">
+                    <form>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                              <label class="form-label form-label-text">Ticket description:</label>
+                              <textarea class="form_input form-control form-control-sm " style="width: 200px; outline: none !important; box-shadow: none;" placeholder="Any..." rows="1" name="ticket_description"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between">
+                              <label class="form-label form-label-text">Ticket detail:</label>
+                              <textarea class="form_input form-control form-control-sm " style="width: 200px; outline: none !important; box-shadow: none;" placeholder="Any..." rows="1" name="ticket_detail"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label form-label-text">Tools:</label>
+                            <select style="width: 26.5%;" data-placeholder="None Selected" multiple class="chosen-select" name="content_size_multi_select" >
+                                <option value=""></option>
+                                <option>Python</option>
+                                <option>Go</option>
+                                <option>Javascript</option>
+                            </select>
+                            <script type="text/javascript">
+                              $(document).ready(function(){
+                                $(".chosen-select").chosen();
+                              });
+                            </script>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-custom" style="float: right;">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div id='section_b' class="tabcontent" name="tabcontent_section">
+                <div class="mb-3">
+                    <h1 class="generated-output-text"><strong>hello</strong></h1>
+                </div>
+            </div>
+            <br>
+        </div>
+        <script>
+            function OpenLLMTabServiceLed(evt, contentId) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByName("tabcontent_section");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByName("tablinks_section");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(contentId).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpenServiceLed").click();
+        </script>
+        <br>
+    </div>
 </div>
 
 {% endblock %}
